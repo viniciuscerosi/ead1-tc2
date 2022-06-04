@@ -15,7 +15,7 @@ export class CadastrarComponent implements OnInit {
   cadastrar() {
     this.web.cadastrarProduto(this.produto).subscribe(res => {
       if(res.ok == true) {
-        alert("O cadastro foi realizado com sucesso");
+        alert("O cadastro foi realizado com sucesso! Atualize a página para que ele seja exibido!");
       } else {
         alert("O cadastro não foi realizado!");
       }

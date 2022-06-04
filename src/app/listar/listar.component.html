@@ -14,7 +14,7 @@
                 <td>{{p.description}}</td>
                 <td>{{p.title}}</td>
                 <td>
-                    <button (click)="deletarProduto(p)">Deletar</button>
+                    <button (click)="deletarProduto(p)">Excluir</button>
                     <button (click)="mostrarAtualizarProduto(p)">Atualizar</button>
                 </td>
             </tr>
@@ -23,7 +23,7 @@
 </div>
 <div *ngIf="produtoParaAtualizar.produto">
     <h1 style="margin-bottom: -20px;">Atualizar Produto</h1>
-    <p>Digite as infromações abaixo e em seguida clique em atualizar!</p>
+    <p>Insira as informações e clique para atualizar!</p>
         <input [(ngModel)]="produtoParaAtualizar.produto.title" placeholder="Título">
         <input [(ngModel)]="produtoParaAtualizar.produto.price" placeholder="Preço">
         <br>
